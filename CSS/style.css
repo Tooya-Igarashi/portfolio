@@ -276,3 +276,51 @@ footer img{
 .social-media a:hover{
     transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+    .content-box,
+    .sectionSelf,
+    section,
+    .content,
+    .footer-box {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .center-container {
+        padding: 0 16px;
+    }
+
+    main {
+        padding: 30px 0;
+    }
+
+    .content img,
+    .travel-content img,
+    .travel-contentB img,
+    .travel-contentC img,
+    .travel-contentD img,
+    .travel-contentE img {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .travel-box,
+    .travel-box:hover {
+        transform: none;
+    }
+
+    .button,
+    button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .footer-box {
+        padding: 24px 16px;
+        align-items: flex-start;
+    }
+}
