@@ -121,7 +121,7 @@ nav{
     background: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     section,
     .content {
         flex-direction: column;
@@ -130,6 +130,10 @@ nav{
 
     .center-container {
         padding: 0 16px;
+    }
+
+    H1{
+        text-align: center;
     }
 
     .content img {
