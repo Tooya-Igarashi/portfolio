@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TLE2 EcoExplorer</title>
+    <link rel="stylesheet" href="CSS/project.css">
+</head>
+<body>
+    <header>
+        <h1>Sonarpoppy</h1>
+        <p>
+            Backend applicatie voor muziek
+        </p>
+        <div>
+            <a href="index.html" class="small-button">Terug naar homepage</a>
+        </div>
+    </header>
+    <div class="center-container">
+        <main>
+            <section>
+                <div class="content">
+                    <h2 id="briefing">Project Debrief</h2>
+                    <p>
+                        Tijdens TLE 3 (Theoretic learning enviorment) is de thema AI algorithms en samenwerken tussen 
+                        front end en back end. Wij casus voor ons gekregen met een opdrachtwaar wij de volgende paar
+                        weken aan de slag zullen gaan. Wij moeten een applicatie maken voor mensen die geïnteresseerd
+                        zijn in muziek en technologie, hierin moet een algoritme in zitten die muziek voor de gebruiker
+                        aanbeveelt en ook muziek buiten zijn bubbel aanbeveelt en wij moeten transparant zijn met
+                        ons gebruik van data.
+
+                    </p>
+                </div>
+                <div class="content">
+                    <nav class="nav-menu">
+                        <h2>Projectoverzicht</h2>
+                        <a href="#briefing"><button class="subject">Debrief</button></a>
+                        <a href="#team"><button class="subject">Team indeling</button></a>
+                        <a href="#bijdrage"><button class="subject">Bijdrage</button></a>
+                        <a href="#uitdaging"><button class="subject">Pain points</button></a>
+                        <a href="#learnings"><button class="subject">Learnings</button></a>
+                    </nav>
+                </div>
+            </section>
+
+
+            <section>
+                <div class="content">
+                    <h2 id="team">Team indeling</h2>
+                    <p>
+                        Teams waren verdeeld tussen A en B, in de development weken zouden twee leden van beide teams
+                        samen komen om het back end team te worden die dan data doorsturen naar beide teams.<br>
+                        <br>
+                        Ik was onderdeel van team B. Wij hadden het idee dat de gebruiker volledige controle had over
+                        zijn eigen algoritme, de gebruiker kan ervoor kiezen om meer of minder van een bepaalde genre
+                        aangeraden te krijgen. Ook kan de gebruiker kiezen hoe gepersonaliseerd de aanbevelingen zijn,
+                        van random naar compleet gepersonaliseerd.
+                    </p>
+                </div>
+            </section>
+
+                        <section>
+                <div class="content">
+                    <h2 id="bijdrage">Mijn bijdrage</h2>
+                    <p>
+                        Ik heb gewerkt aan de userflow in het project en het loggen van data voor de admin kant.<br>
+                        <br>
+                        Voor de userflow heb ik de CRUD functionaliteiten toegevoegd en ook het inloggen en signup.
+                        Bij het inloggen wordt ook een JSON webtoken aangemaakt, in de token zit ook het id en de role
+                        van de gebruiker. Sinds de JSON webtoken bij bijna elke request (behalve log in en sign up) 
+                        word gevraagd, is het ook handig om deze hierin te stoppen zodat front end nergens deze data
+                        hoeft op te slaan.<br>
+                        <br>
+                        Voor het loggen heb ik gebruik gemaakt van mongoose-history plugin. De plugin maakt een nieuwe
+                        veld aan met _history erachter met alle veranderingen erin, erg handig voor het loggen.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <div class="content">
+                    <h2 id="uitdaging">Pain points</h2>
+                    <p>
+                        Dit is de eerste keer dat ik werk in een front end en back end team setting, dus het was nog
+                        wel wennen om alleen aan back end problemen te denken terwijl ik normaal met projecten via beiden
+                        kanten moet gaan denken.<br>
+                        <br>
+                        Vervolgens was het ook lastig om te werken met Express, voornamelijk omdat het nog een 
+                        vrij nieuwe taal voor mij was dus het was nog even wennen en veel documentatie lezen
+                        om bepaalde onderdelen te maken.
+                    </p>
+                </div>
+            </section>
+
+                        <section>
+                <div class="content">
+                    <h2 id="learnings">Wat heb ik geleerd</h2>
+                    <p>
+                        Ik heb het belang van communicatie weer meegemaakt, bij ons in het team ging het vrij soepel
+                        omdat wij duidelijke aanspreek personnen hadden voor elk team en problemen tijdelijk werden gemeld.
+                        Problemen werden ook snel door het back end team behandeld dat denk ik ook hielp. Ik snap dat
+                        onze sprints van drie weken heel anders zal zijn dan in het daadwerkelijk bedrijfsleven, waar ik ook wel
+                        benieuwd naar ben hoe de communicatie daar zal gaan tussen teams. <br>
+                        <br>
+                        Ook ben ik blij dat ik mijzelf verder heb kunnen verdiepen in Express en Mongo DB. Ik had ook voor
+                        het eerst met JWT gewerkt dat ook wel een handige ervaring is om te hebben.
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
